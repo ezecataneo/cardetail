@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+.nav {
+    background-color: #f5642f;
+}
+/* uso de pseudoclase */
+.nav_list {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    transition: 0.5s;
+}
+
+.nav_contacto:hover {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 3px;
+    border-radius: 7px;
+}
+
+.nav_list a {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.div_nav {
+    padding: 20px;
+}
+.div_nav img {
+    border: 5px #0f0f0f solid;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 170px;
+    width: 350px;
+}
+/* main index */
+.section_one_index {
+    background-color: #ffffff;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+}
+
+.section_two_index {
+    background-color: #ee8762;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.section_two_index img {
+    height: 30%;
+    width: 30%;
+    border:  5px #000000 solid;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.div_index { 
+    background-color: #ee8762;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    gap: 25px;
+    color: #360808;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+/*uso de pseudoclase*/
+.div_index img:hover {
+    width: 30%;
+    height: 30%;
+}
+
+.div_index img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    border: 5px #000000 solid;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px 0px #1b1a1a;
+}
+/* main contacto */
+.titulo_contacto {
+    color: #000000;
+    font-size: 30px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px;
+}
+
+.caja_form_contacto {
+    background-color: #ee8762;
+    display: flex;
+    gap: 60px;
+    padding: 50px;
+    border: #000000 5px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    font-size: 20px;
+    color: #000000;
+    padding: 40px;
+}
+
+.dato_formulario {
+    padding: 20px;
+}
+
+.formulario h2 {
+    font-size: 30px;
+}
+
+.img_contacto {
+    object-fit: cover;
+    box-shadow: 7px 7px 7px 5px #0e0e0e;
+}
+
+.boton_formulario {
+    padding: 50px;
+    text-align: center;
+}
+/* footeer */
+.div_footer {
+    display: flex;
+    padding: 30px;
+    color: #de5827;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_footer img {
+    width: 80px;
+    height: 80px;
+}
+/* mediaqueries contacto */
+@media screen and (max-width: 1186px ) {
+    .caja_form_contacto {
+        flex-direction: column
+    }
+
+    .img_contacto {
+    box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 760px ) {
+    .caja_form_contacto {
+        flex-direction: column
+    }
+
+    .img_contacto {
+    box-shadow: none;
+    }
+
+    .img_contacto img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 712px ) {
+    .caja_form_contacto {
+        flex-direction: column
+    }
+
+    .img_contacto {
+    box-shadow: none;
+    }
+
+    .img_contacto img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .formulario {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 430px ) {
+    .caja_form_contacto {
+        flex-direction: column
+    }
+
+    .img_contacto {
+    box-shadow: none;
+    }
+
+    .img_contacto img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .nav_list {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 16px;
+    }
+
+    .titulo_contacto {
+        display: none;
+    }
+
+    .formulario {
+        padding: 8px;
+    }
+
+    .div_nav img {
+        border: 5px #0f0f0f solid;
+        border-radius: 12px;
+        object-fit: cover;
+        height: 150px;
+        width: 250px;
+    }
+}
+/* uso de boostrap en el main de trabajos */
+.d-block {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    border: solid #000000 5px;
+    border-radius: 8px;
+}
+
+.display-4 {
+    text-align: center;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+}

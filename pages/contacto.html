@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCD CARDETAL</title>
+    <link rel="shortcut icon" href="../images/logomcd.jpg" type="image/x-icon">
+    <!---enlace a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!---enlace a css-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+            <!---este es el menu de navegacion-->
+        <nav class="nav">
+          <div class="div_nav">
+            <img src="../images/logomcd.jpg" alt="logo_nav">
+            <ul class="nav_list">
+                <li><a href="../index.html" class="nav_link">Inicio</a></li>
+                <li><a href="historia.html" class="nav_link">Historia</a></li>
+                <li><a href="contacto.html" class="nav_link nav_contacto">Contacto</a></li>
+                <li><a href="trabajos.html" class="nav_link">Trabajos</a></li>
+                <li><a href="productos.html"class="nav_link" >Productos</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <!---este es el contenido de web-->
+    <section class="titulo_contacto">
+        <h1>Contactanos</h1>
+    </section>
+    <main>
+      <section class="caja_form_contacto">
+        <article class="formulario">
+        <h2>Completa el formulario</h2>
+        <form action="" method="GET" enctype="application/x-www-form-urlencoded">
+        <div class="dato_formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="ingrese su nombre" name="nombre">
+        </div>
+        <div class="dato_formulario">
+            <label for="apellido">Apellido:</label>
+            <input type="text" placeholder="ingrese su apellido" name="apellido">
+        </div>
+        <div class="dato_formulario">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="ingrese su email" name="email">
+        </div>
+        <div class="dato_formulario">
+            <label for="telefono">Telefono:</label>
+            <input type="text" placeholder="ingrese su telefono" name="telefono">
+        </div>
+        <div class="dato_formulario">
+            <label for="dejanos tu mensaje">Mensaje:</label>
+            <textarea name="dejanos tu mensaje" id="" cols="30" rows="10" placeholder="dejanos tu mensaje"></textarea>
+        </div>
+        <div class="dato_formulario">
+            <label for="lugar de trabajo">Tabajo en nuesto local:</label>
+            <input type="radio" name="lugar de trabajo">
+            <label for="lugar de trabajo">Tabajo en tu domicilio:</label>
+            <input type="radio" name="lugar de trabajo">
+    <!---uso de class boostrap-->
+        <div class="d-grid gap-2">
+            <button type="submit">Enviar</button>
+        </div>
+        </article>
+        <article class="img_contacto">
+            <img src="../images/mcddatos.jpg" alt="logo_info">
+        </article>
+        </section>
+        </form>
+    </main>
+    <!---pie de pagina web-->
+    <footer>
+        <div class="div_footer">
+            <h3>Seguinos en nuestro instagram</h3>
+            <a href="https://www.instagram.com/mcdcardetail/" target="_blank"><img src="../images/iconoinsta.jpg" alt="img_insta"></a>
+        </div>
+    </footer>
+    <!---link script de boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

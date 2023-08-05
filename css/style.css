@@ -95,7 +95,7 @@
     font-size: 30px;
     background-color: #ffffff;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
 }
 
 .caja_form_contacto {
@@ -131,6 +131,23 @@
     padding: 50px;
     text-align: center;
 }
+/*main de historia utilizando clases de boostrap modificandolas*/
+.main_historia {
+    background: #ee8762;
+    padding: 30px;
+    border: #000000 solid 3px;
+}
+.img_historia {
+    display: flex;
+    gap: 30px;
+}
+
+.img-fluid {
+    object-fit: cover;
+    height: 600px;
+    padding: 3px;
+}
+
 /* footeer */
 .div_footer {
     display: flex;

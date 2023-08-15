@@ -1,1 +1,140 @@
+@media screen and (max-width: 1086px ) {
+    .nav_list  {
+    gap: 30px;
+    }
 
+    .nav_list a {
+        font-size: 24px;
+    }
+
+    }
+
+    @media screen and (max-width: 780px ) {
+    .nav_list  {
+    gap: 15px;
+    }
+
+    .nav_list a {
+    font-size: 20px;
+    }
+
+    .div_nav img {
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+    border: 3px #0f0f0f solid;
+    }
+
+    .div_index { 
+    background-color: #ee8762;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .div_index img {
+    width: 60%;
+    object-fit: cover;
+    border: 3px #000000 solid;
+    }
+}
+
+@media screen and (max-width: 580px ) {
+    .nav_list  {
+    flex-direction: column;
+    gap: 5px;
+    }
+
+    .nav_list a {
+    font-size: 16px;
+    }
+
+    .div_nav img {
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+    border: 3px #0f0f0f solid;
+    }
+
+    .section_one_index h1{
+    font-size: 20px;
+    }
+
+    .section_two_index {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    }
+
+    .section_two_index img {
+    height: 30%;
+    width: 100%;
+    border:  3px #000000 solid;
+    object-fit: cover;
+    }
+
+}
+@media screen and (max-width: 730px ) {
+    .div_footer {
+    padding: 18px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    }
+
+    .display-4 {
+    font-size: 40px;
+    }
+    
+    .carousel-item img {
+    width: auto;
+    }
+
+}
+
+@media screen and (max-width: 520px ) {
+    .div_footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    }
+
+    .div_footer img {
+    display: none;
+    }
+
+    .display-4 {
+    font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1230px ) {
+    .img_contacto img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1016px ) {
+    .caja_form_contacto {
+    flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px ) {
+    .img_contacto img  {
+    width: 270px;
+    }
+
+    .formulario,.formulario h2,.titulo_contacto {
+    gap: 10px;
+    padding: 20px;
+    font-size: 16px;
+    }
+
+}

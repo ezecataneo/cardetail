@@ -139,10 +139,6 @@
   object-fit: cover;
   box-shadow: 7px 7px 7px 5px #0e0e0e;
 }
-.caja_form_contacto .boton_formulario {
-  padding: 50px;
-  text-align: center;
-}
 
 .grilla {
   gap: 10px;

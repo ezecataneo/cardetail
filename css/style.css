@@ -60,7 +60,7 @@
   height: 80px;
 }
 
-.section_one_index {
+.section_one_index, .titulo_contacto {
   background-color: #ffffff;
   font-size: 25px;
   color: #000000;
@@ -105,14 +105,6 @@
 .div_index img:hover {
   width: 30%;
   height: 30%;
-}
-
-.titulo_contacto {
-  color: #000000;
-  font-size: 30px;
-  background-color: #ffffff;
-  text-align: center;
-  padding: 30px;
 }
 
 .caja_form_contacto {
@@ -268,7 +260,7 @@
     object-fit: cover;
     border: 3px #0f0f0f solid;
   }
-  .section_one_index h1 {
+  .section_one_index h1, .titulo_contacto h1 {
     font-size: 20px;
   }
   .section_two_index {

@@ -1,9 +1,5 @@
 .titulo_contacto {
-    color: #000000;
-    font-size: 30px;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 30px;
+    @extend.section_one_index
 }
 
 .caja_form_contacto {

@@ -1,0 +1,16 @@
+.main_historia {
+    background: $color_secundario;
+    padding: 30px;
+    border: #000000 solid 3px;
+      .img_historia {
+        display: flex;
+        gap: 30px;
+    }
+      .img-fluid {
+        object-fit: cover;
+        height: 600px;
+        padding: 3px;
+    }
+}
+
+

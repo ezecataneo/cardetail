@@ -1,0 +1,49 @@
+.grilla {
+    gap: 10px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "area1 area1 area2 area2"
+    "area1 area1 area4 area4"
+    "area3 area3 area4 area4"
+    "area5 area5 area5 area5"
+    ;
+      .c1{
+        border: #000000 solid 3px;
+        grid-area: area1;
+    }
+      .c2{
+        border: #000000 solid 3px;
+        grid-area: area2;
+    }
+      .c3{
+        border: #000000 solid 3px;
+        grid-area: area3;
+    }
+      .c4{
+        border: #000000 solid 3px;
+        grid-area: area4;
+    }
+      .c5{
+        border: #000000 solid 3px;
+        grid-area: area5;
+    }
+    
+  .caja {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     img {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+    }
+}
+}
+
+
+

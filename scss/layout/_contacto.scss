@@ -1,0 +1,45 @@
+.titulo_contacto {
+    color: #000000;
+    font-size: 30px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+.caja_form_contacto {
+    background-color: $color_secundario;
+    display: flex;
+    gap: 60px;
+    padding: 50px;
+    border: #000000 5px solid;
+    justify-content: center;
+    align-items: center;
+      .formulario {
+        font-size: 20px;
+        color: #000000;
+        padding: 40px;
+    }
+      h2 {
+        font-size: 30px;
+    }
+      .dato_formulario {
+        padding: 20px;
+    }
+      .img_contacto {
+        object-fit: cover;
+        box-shadow: 7px 7px 7px 5px #0e0e0e;
+    }
+    
+      .boton_formulario {
+        padding: 50px;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+.div_nav {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background: $color_primario;
+      .nav_list {
+        list-style-type: none;
+        gap: 80px;
+        transition: 0.5s;
+        display: flex;
+    }
+      .nav_contacto:hover {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 3px;
+        border-radius: 7px;
+    }
+      .nav_list a{
+        font-size: 30px;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.div_nav img {
+  border: 5px #0f0f0f solid;
+  border-radius: 12px;
+  object-fit: cover;
+  height: 170px;
+  width: 350px;
+}
+
+
+
+
+

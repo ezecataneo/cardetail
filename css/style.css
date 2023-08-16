@@ -78,9 +78,9 @@
 .section_two_index img {
   height: 30%;
   width: 30%;
+  object-fit: cover;
   border: 5px #000000 solid;
   border-radius: 4px;
-  object-fit: cover;
 }
 
 .div_index {
@@ -95,8 +95,8 @@
   transition: 1s;
 }
 .div_index img {
-  width: 25%;
   height: 25%;
+  width: 25%;
   object-fit: cover;
   border: 5px #000000 solid;
   border-radius: 10px;
@@ -109,10 +109,10 @@
 
 .caja_form_contacto {
   background-color: #ee8762;
-  display: flex;
-  gap: 60px;
   padding: 50px;
   border: #000000 5px solid;
+  display: flex;
+  gap: 60px;
   justify-content: center;
   align-items: center;
 }
@@ -213,9 +213,9 @@
 
 @media screen and (max-width: 1086px) {
   .nav_list {
-    gap: 30px;
+    gap: 10px;
   }
-  .nav_list a {
+  .nav_list .nav_list a {
     font-size: 24px;
   }
 }
@@ -223,7 +223,7 @@
   .nav_list {
     gap: 15px;
   }
-  .nav_list a {
+  .nav_list .nav_list a {
     font-size: 20px;
   }
   .div_nav img {
@@ -251,7 +251,7 @@
     flex-direction: column;
     gap: 5px;
   }
-  .nav_list a {
+  .nav_list .nav_list a {
     font-size: 16px;
   }
   .div_nav img {

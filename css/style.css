@@ -42,7 +42,7 @@
   padding: 30px;
   color: #e9e5e3;
   font-size: 30px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   gap: 60px;
   border: #050100 solid 3px;
@@ -58,6 +58,10 @@
 .div_footer img {
   width: 80px;
   height: 80px;
+}
+
+footer {
+  background-image: linear-gradient(to left #de5827, #ee8762, #ffffff);
 }
 
 .section_one_index, .titulo_contacto {

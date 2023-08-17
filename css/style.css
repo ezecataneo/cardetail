@@ -38,6 +38,7 @@
 }
 
 .div_footer {
+  background-image: linear-gradient(#ee8762, #ffffff);
   display: flex;
   padding: 30px;
   color: #e9e5e3;
@@ -45,11 +46,10 @@
   justify-content: space-around;
   align-items: center;
   gap: 60px;
-  border: #050100 solid 3px;
 }
 .div_footer a {
   text-decoration: none;
-  color: #0606fb;
+  color: #09099a;
 }
 .div_footer iframe {
   width: 100px;
@@ -60,10 +60,6 @@
   height: 80px;
 }
 
-footer {
-  background-image: linear-gradient(to left #de5827, #ee8762, #ffffff);
-}
-
 .section_one_index, .titulo_contacto {
   background-color: #ffffff;
   font-size: 25px;
@@ -71,7 +67,25 @@ footer {
   text-align: center;
   padding: 15px;
 }
+.section_one_index h1, .titulo_contacto h1 {
+  animation-name: title_move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
 
+@keyframes title_move {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .section_two_index {
   background-color: #ee8762;
   padding: 20px;
@@ -201,9 +215,7 @@ footer {
 
 .display-4 {
   text-align: center;
-  font-size: 60px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 40px;
+  padding: 15px;
 }
 
 .texto_main_trabajos {

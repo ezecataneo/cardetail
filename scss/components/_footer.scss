@@ -1,4 +1,5 @@
 .div_footer {
+    background-image: linear-gradient($color_secundario,#ffffff);
     display: flex;
     padding: 30px;
     color: #e9e5e3;
@@ -6,10 +7,9 @@
     justify-content: space-around;
     align-items: center;
     gap: 60px;
-    border: #050100 solid 3px;
       & a {
         text-decoration: none;
-        color: #0606fb;
+        color: #09099a;
     }
       & iframe{
         width: 100px;
@@ -20,8 +20,6 @@
         height: 80px;
     }
 }
-footer{
-  background-image: linear-gradient(to left $color_primario,$color_secundario,#ffffff);
-}
+
 
 

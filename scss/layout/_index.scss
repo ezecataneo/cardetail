@@ -1,10 +1,32 @@
 .section_one_index {
-    background-image: linear-gradient(to left $color_primario,$color_secundario,#ffffff);
+    background-color: #ffffff;
     font-size: 25px;
     color: #000000;
     text-align: center;
     padding: 15px;
+    h1{
+        animation-name: title_move;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 3s;
+        animation-delay: 0s;
+    }    
 }
+
+@keyframes title_move {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(40px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
 
 .section_two_index {
     background-color: $color_secundario;

@@ -163,3 +163,48 @@
       flex-direction: column;
 }
 }
+/*mediaqueris historia*/
+@media screen and (max-width: 1230px ) {
+    .img-fluid {
+      display: none;
+  }
+}
+/*mediaqueris productos*/
+@media screen and (max-width: 1185px ) {
+  .grilla {
+    grid-template-areas: 
+    "area1 area1 area1 area1"
+    "area2 area2 area2 area2"
+    "area3 area3 area3 area3"
+    "area4 area4 area4 area4"
+    "area5 area5 area5 area5"
+    ;
+}
+}
+
+@media screen and (max-width: 650px ) {
+  .caja {
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 521px ) {
+  .grilla .caja img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 378px ) {
+  .grilla .caja img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 328px ) {
+  .grilla .caja img {
+    height: 180px;
+    width: 180px;
+  }
+}

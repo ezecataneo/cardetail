@@ -14,7 +14,6 @@
 .div_nav .nav_list {
   list-style-type: none;
   gap: 80px;
-  transition: 0.5s;
   display: flex;
 }
 .div_nav .nav_contacto:hover {
@@ -24,6 +23,7 @@
   border-radius: 7px;
 }
 .div_nav .nav_list a {
+  transition: 0.5s;
   font-size: 30px;
   color: black;
   text-decoration: none;
@@ -80,7 +80,7 @@
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(40px);
+    transform: translateX(15px);
   }
   100% {
     transform: translateX(0);
@@ -110,9 +110,9 @@
   color: #360808;
   justify-content: center;
   align-items: center;
-  transition: 1s;
 }
 .div_index img {
+  transition: 0.5s;
   height: 25%;
   width: 25%;
   object-fit: cover;
@@ -228,18 +228,18 @@
 }
 
 @media screen and (max-width: 1086px) {
-  .nav_list {
-    gap: 10px;
+  .div_nav {
+    padding: 10px;
   }
-  .nav_list .nav_list a {
-    font-size: 24px;
+  .div_nav .nav_list {
+    gap: 40px;
   }
 }
 @media screen and (max-width: 780px) {
   .nav_list {
     gap: 15px;
   }
-  .nav_list .nav_list a {
+  .nav_list a {
     font-size: 20px;
   }
   .div_nav img {

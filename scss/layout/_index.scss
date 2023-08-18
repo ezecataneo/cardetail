@@ -18,7 +18,7 @@
         transform: translateX(0px);
     }
     50% {
-        transform: translateX(40px);
+        transform: translateX(15px);
     }
     100% {
         transform: translateX(0);
@@ -48,14 +48,14 @@
     color: #360808;
     justify-content: center;
     align-items: center;
-    transition: 1s;
      & img {
+        transition: 0.5s;
         @include imagen(25%,25%,cover);
         border: 5px #000000 solid;
         border-radius: 10px;
         box-shadow: 15px 15px 15px 0px #1b1a1a;
     }
-      & img:hover {
+      img:hover {
         width: 30%;
         height: 30%;
     }

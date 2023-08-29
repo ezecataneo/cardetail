@@ -185,7 +185,7 @@
   }
 }
 /*mediaqueris productos*/
-@media screen and (max-width: 1185px ) {
+@media screen and (max-width: 1240px ) {
   .grilla {
     grid-template-areas: 
     "area1 area1 area1 area1"
@@ -197,7 +197,7 @@
 }
 }
 
-@media screen and (max-width: 650px ) {
+@media screen and (max-width: 760px ) {
   .caja {
     flex-direction: column;
 }

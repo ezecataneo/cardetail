@@ -1,4 +1,11 @@
 /*mediaqueris navbar*/
+@media screen and (max-width: 1288px ) {
+  .div_nav img {
+    height: 160px;
+    width: 310px;
+  }
+}
+
     @media screen and (max-width: 1240px ) {
     .div_nav img {
   height: 150px;
@@ -227,7 +234,7 @@
   }
 }
 /*mediaqueris productos*/
-@media screen and (max-width: 1240px ) {
+@media screen and (max-width: 1288px ) {
   .grilla {
     grid-template-areas: 
     "area1 area1 area1 area1"

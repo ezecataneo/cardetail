@@ -1,3 +1,4 @@
+//simulador para sacar un turno en MCDcardetail.
 function obtenerInputDelUsuario() {
     let diaSeleccionado = "";
 
@@ -34,7 +35,7 @@ function obtenerInputDelUsuario() {
             }
             dias++;
         }
-        let diaIngresado = prompt ("Elegi un dia de la semana:" + diaDeLaSemana);
+        let diaIngresado = prompt ("Elegi un dia de la semana, colocando solo el numero:" + diaDeLaSemana);
         switch (diaIngresado) {
             case "1": 
                 diaSeleccionado = "lunes";
@@ -68,7 +69,7 @@ function obtenerInputDelUsuario() {
             alert ("Su turno de: " + trabajo + " su auto, se genero para el dia: " + diaSeleccionado +", gracias por contactarse con nosotros");
         }
     } else {
-      alert("Elegiste un trabajo que no realizamos, coloca la palabra pulido o lavado solamente.");
+      alert("Elegiste un trabajo que no realizamos, coloca la palabra pulir o lavar solamente.");
     }
   }
   

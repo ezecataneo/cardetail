@@ -1,9 +1,9 @@
 //simulador para sacar un turno en MCDcardetail.
-function obtenerInputDelUsuario() {
+/*function obtenerInputDelUsuario() {
     let diaSeleccionado = "";
 
     alert("Bienvenido a MCDcardetail");
-    var trabajo = prompt("Elegi si a tu auto lo queres pulir o lavar:");
+    let trabajo = prompt("Elegi si a tu auto lo queres pulir o lavar:");
     
     if (trabajo === "pulir" || trabajo === "lavar") {
         let diaDeLaSemana = "";
@@ -72,5 +72,58 @@ function obtenerInputDelUsuario() {
       alert("Elegiste un trabajo que no realizamos, coloca la palabra pulir o lavar solamente.");
     }
   }
+   
+obtenerInputDelUsuario();*/
+//SEGUNDA PRE ENTREGA
+
+function obtenerInputDelUsuario() {
+    let diaSeleccionado = "";
+    let horarioSeleccionado = "";
+    
+    alert("Bienvenido a MCDcardetail");
+    let trabajo = prompt("Elija si desea pulir o lavar su auto:");
   
-obtenerInputDelUsuario();
+    if (trabajo === "pulir" || trabajo === "lavar") {
+      // Definimos un array con los días de la semana
+      let diasSemana = [
+        {nombre: "lunes", hora: ["9am", "11am", "3pm"]},
+        {nombre: "martes", hora: ["8am", "10am", "2pm"]},
+        {nombre: "miércoles", hora: ["9am", "11am", "5pm"]},
+        {nombre: "jueves", hora: ["9am", "10am", "3pm"]},
+        {nombre: "viernes", hora: ["7am", "9am", "2pm"]},
+        {nombre: "sábado", hora: ["9am", "11am"]},
+        {nombre: "domingo", hora: ["no se trabaja"]}
+      ];
+  
+      // Mostramos los días de la semana al usuario
+      let diaDeLaSemana = "";
+      for (let i = 0; i < diasSemana.length; i++) {
+        diaDeLaSemana += (i + 1) + "-" + diasSemana[i].nombre + "\n";
+      }
+  
+      let diaIngresado = prompt("Elija un día de la semana, ingresando solo el número:\n" + diaDeLaSemana);
+  
+      // Convertimos el número ingresado en el nombre del día
+      let diaIndex = parseInt(diaIngresado) - 1;
+      if (diaIndex >= 0 && diaIndex < diasSemana.length) {
+        let dia = diasSemana[diaIndex];
+        let horariosDisponibles = dia.hora.join(", ");
+        let horarioIngresado = prompt(`Elija un horario para ${dia.nombre}, ingresando uno de los siguientes horarios: ${horariosDisponibles}`);
+  
+        if (dia.hora.includes(horarioIngresado)) {
+          diaSeleccionado = dia.nombre;
+          horarioSeleccionado = horarioIngresado;
+          alert(`Su turno para ${trabajo} su auto se generó para el día: ${diaSeleccionado}, a las ${horarioSeleccionado}. Gracias por contactarse con nosotros.`);
+        } else {
+          alert("Horario seleccionado no válido");
+        }
+      } else {
+        alert("Día seleccionado no válido");
+      }
+    } else {
+      alert("Ha elegido un trabajo que no realizamos. Por favor, ingrese 'pulir' o 'lavar' solamente.");
+    }
+  }
+  
+  obtenerInputDelUsuario();
+

@@ -3,30 +3,6 @@
 function obtenerInputDelUsuario() {
   let diaSeleccionado = "";
   let horarioSeleccionado = "";
-
-  alert("Bienvenido a MCDcardetail");
-  let trabajo = prompt("Elija si desea pulir o lavar su auto:");
-  if (trabajo === "pulir" || trabajo === "lavar") {
-    
-    let diasSemana = [
-      {nombre: "lunes", hora: ["9am", "11am", "3pm"]},
-      {nombre: "martes", hora: ["8am", "10am", "2pm"]},
-      {nombre: "miércoles", hora: ["9am", "11am", "5pm"]},
-      {nombre: "jueves", hora: ["9am", "10am", "3pm"]},
-      {nombre: "viernes", hora: ["7am", "9am", "2pm"]},
-      {nombre: "sábado", hora: ["9am", "11am"]},
-      {nombre: "domingo", hora: ["no se trabaja"]}
-    ];
-  }
-}
-
-
-
-
-
-/*function obtenerInputDelUsuario() {
-  let diaSeleccionado = 
-  let horarioSeleccionado = "";
   
   alert("Bienvenido a MCDcardetail");
   let trabajo = prompt("Elija si desea pulir o lavar su auto:");
@@ -89,4 +65,4 @@ for (let i = 0; i < 3; i++) {
 
 // mediante consola muestro los turnos de los clientes
 console.log("Turnos de los clientes:");
-console.log(turnosClientes);*/
+console.log(turnosClientes);

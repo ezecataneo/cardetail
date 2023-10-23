@@ -1,68 +1,58 @@
-//Simulador para sacar turnos en MCDcardetail.
-
-function obtenerInputDelUsuario() {
-  let diaSeleccionado = "";
-  let horarioSeleccionado = "";
-  
-  alert("Bienvenido a MCDcardetail");
-  let trabajo = prompt("Elija si desea pulir o lavar su auto:");
-
-  if (trabajo === "pulir" || trabajo === "lavar") {
+document.addEventListener("DOMContentLoaded", function () {
+    // Agregar un evento para manejar el envío del formulario
+    // Obtener el formulario por su ID
     
-    let diasSemana = [
-      {nombre: "lunes", hora: ["9am", "11am", "3pm"]},
-      {nombre: "martes", hora: ["8am", "10am", "2pm"]},
-      {nombre: "miércoles", hora: ["9am", "11am", "5pm"]},
-      {nombre: "jueves", hora: ["9am", "10am", "3pm"]},
-      {nombre: "viernes", hora: ["7am", "9am", "2pm"]},
-      {nombre: "sábado", hora: ["9am", "11am"]},
-      {nombre: "domingo", hora: ["no se trabaja"]}
-    ];
+    //const formulario = document.getElementById("miBoton");
 
-    
-    let diaDeLaSemana = "";
-    for (let i = 0; i < diasSemana.length; i++) {
-      diaDeLaSemana += (i + 1) + "-" + diasSemana[i].nombre + "\n";
-    }
+    //console.log(formulario);
 
-    let diaIngresado = prompt("Elija un día de la semana, ingresando solo el número:\n" + diaDeLaSemana);
+    const btnGuardar = document.getElementById("miBoton");
+    btnGuardar.addEventListener("click", function (event) {
+        event.preventDefault(); // Evitar que el formulario se envíe normalmente
+        // Obtener los valores de los campos
+        const nombre = document.getElementById("nombre").value;
+        const apellido = document.getElementById("apellido").value;
+        const email = document.getElementById("email").value;
+        const telefono = document.getElementById("telefono").value;
+        const mensaje = document.getElementById("mensaje").value;
+        const lugarTrabajo = document.getElementsByName("tipoTrabajo");
 
-    
-    let diaIndex = parseInt(diaIngresado) - 1;
-    if (diaIndex >= 0 && diaIndex < diasSemana.length) {
-      let dia = diasSemana[diaIndex];
-      let horariosDisponibles = dia.hora.join(", ");
-      let horarioIngresado = prompt(`Elija un horario para ${dia.nombre}, ingresando uno de los siguientes horarios: ${horariosDisponibles}`);
+        let opcionSeleccionada = "";
 
-      if (dia.hora.includes(horarioIngresado)) {
-        diaSeleccionado = dia.nombre;
-        horarioSeleccionado = horarioIngresado;
-        alert(`Su turno para ${trabajo} su auto se generó para el día: ${diaSeleccionado}, a las ${horarioSeleccionado}. Gracias por contactarse con nosotros.`);
+        lugarTrabajo.forEach(function(opcion) {
+            if (opcion.checked) {
+                opcionSeleccionada = opcion.value;
+            }
+        });
 
-        return { trabajo, diaSeleccionado, horarioSeleccionado };
-      } else {
-        alert("Horario seleccionado no válido");
-      }
-    } else {
-      alert("Día seleccionado no válido");
-    }
-  } else {
-    alert("Ha elegido un trabajo que no realizamos. Por favor, ingrese 'pulir' o 'lavar' solamente.");
-  }
-  return null;
-}
+        // Crear un objeto con los datos del usuario
+        const datosUsuario = {
+            nombre: nombre,
+            apellido: apellido,
+            email: email,
+            telefono: telefono,
+            mensaje: mensaje,
+            lugarTrabajo: opcionSeleccionada
+        };
 
-// array para almacenar los turnos de los clientes
-let turnosClientes = [];
+        let datosGuardados = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-// Simulo la recepción de múltiples turnos utilizando un bucle y metodo push.
-for (let i = 0; i < 3; i++) {
-  let turnoCliente = obtenerInputDelUsuario();
-  if (turnoCliente) {
-    turnosClientes.push(turnoCliente);
-  }
-}
+        // Agregar los nuevos datos del formulario al array
+        datosGuardados.push(datosUsuario);
+        // Guardar el array actualizado en el localStorage
+        localStorage.setItem("usuarios", JSON.stringify(datosGuardados));
 
-// mediante consola muestro los turnos de los clientes
-console.log("Turnos de los clientes:");
-console.log(turnosClientes);
+        // Mostrar una alerta de confirmación
+        if (datosUsuario){
+            confirmation.textContent = "Los datos se han guardado correctamente.";
+        }
+
+        function modificarMensaje() {
+            const confirmation = document.getElementById("confirmation");
+            confirmation.textContent = "";
+        }
+        
+        const tiempoEspera = 2000; // 2 segundos
+        setTimeout(modificarMensaje, tiempoEspera);
+    });
+});

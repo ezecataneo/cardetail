@@ -1,12 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Agregar un evento para manejar el envío del formulario
+
+document.addEventListener("DOMContentLoaded", function () {    // Agregar un evento para manejar el envío del formulario
     // Obtener el formulario por su ID
-    
+
     //const formulario = document.getElementById("miBoton");
 
     //console.log(formulario);
-
+    console.log("El evento DOMContentLoaded se ha disparado.");
     const btnGuardar = document.getElementById("miBoton");
+    const listaNombresTelefonos = document.getElementById("listaNombresTelefonos");
+
     btnGuardar.addEventListener("click", function (event) {
         event.preventDefault(); // Evitar que el formulario se envíe normalmente
         // Obtener los valores de los campos
@@ -19,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let opcionSeleccionada = "";
 
-        lugarTrabajo.forEach(function(opcion) {
+        lugarTrabajo.forEach(function (opcion) {
             if (opcion.checked) {
                 opcionSeleccionada = opcion.value;
             }
@@ -43,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("usuarios", JSON.stringify(datosGuardados));
 
         // Mostrar una alerta de confirmación
-        if (datosUsuario){
+        if (datosUsuario) {
             confirmation.textContent = "Los datos se han guardado correctamente.";
         }
 
@@ -51,8 +53,35 @@ document.addEventListener("DOMContentLoaded", function () {
             const confirmation = document.getElementById("confirmation");
             confirmation.textContent = "";
         }
-        
+
         const tiempoEspera = 2000; // 2 segundos
         setTimeout(modificarMensaje, tiempoEspera);
+
     });
 });
+
+const apiUrl = 'https://fakestoreapi.com/users';
+
+function test(){
+    const users = fetch(apiUrl)
+    .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(usuarios => {
+        const resultadoDiv = document.getElementById('consulta-usuarios');
+
+        usuarios.forEach(item => {
+          const p = document.createElement('p');
+          p.textContent = `Nombre: ${item.username}, Email: ${item.email}`;
+    
+          resultadoDiv.appendChild(p);
+        })
+      })
+      .catch(error => {
+        console.error('Fetch error:', error);
+      });
+}
+test();

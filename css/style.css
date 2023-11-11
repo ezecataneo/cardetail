@@ -156,17 +156,16 @@
 .api {
   background-color: #f5bba5;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
   padding: 15px;
 }
-
 
 #consulta-usuarios {
   background-color: #f5bba5;
   text-align: center;
   padding: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
 }
 

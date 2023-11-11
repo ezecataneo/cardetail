@@ -47,6 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {    // Agregar un eve
         // Mostrar una alerta de confirmación
         if (datosUsuario) {
             confirmation.textContent = "Los datos se han guardado correctamente.";
+            Swal.fire({
+              title: "Sus datos se registraron correctamente!",
+              text: "MCDcardetail",
+              icon: "success"
+            });
         }
 
         function modificarMensaje() {
@@ -85,3 +90,5 @@ function test(){
       });
 }
 test();
+
+

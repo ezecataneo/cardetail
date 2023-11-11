@@ -153,6 +153,23 @@
   box-shadow: 7px 7px 7px 5px rgba(25, 24, 24, 0.4509803922);
 }
 
+.api {
+  background-color: #f5bba5;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  padding: 15px;
+}
+
+
+#consulta-usuarios {
+  background-color: #f5bba5;
+  text-align: center;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
 .grilla {
   gap: 10px;
   padding: 50px;
